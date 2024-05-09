@@ -1,0 +1,11 @@
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\bin\Debug\Blokich.Repository.Common.dll
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\bin\Debug\Blokich.Repository.Common.pdb
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\bin\Debug\Blokich.Model.Common.dll
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\bin\Debug\Blokich.Model.dll
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\bin\Debug\Blokich.Model.Common.pdb
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\bin\Debug\Blokich.Model.pdb
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\obj\Debug\Blokich.Repository.Common.csproj.AssemblyReference.cache
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\obj\Debug\Blokich.Repository.Common.csproj.CoreCompileInputs.cache
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\obj\Debug\Blokich.Repository.Common.csproj.CopyComplete
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\obj\Debug\Blokich.Repository.Common.dll
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Repository.Common\obj\Debug\Blokich.Repository.Common.pdb

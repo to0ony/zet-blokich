@@ -1,0 +1,6 @@
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Model.Common\bin\Debug\Blokich.Model.Common.dll
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Model.Common\bin\Debug\Blokich.Model.Common.pdb
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Model.Common\obj\Debug\Blokich.Model.Common.csproj.AssemblyReference.cache
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Model.Common\obj\Debug\Blokich.Model.Common.csproj.CoreCompileInputs.cache
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Model.Common\obj\Debug\Blokich.Model.Common.dll
+D:\coding\BLOKICH\NEWBACKEND\Blokich.WebApi\Blokich.Model.Common\obj\Debug\Blokich.Model.Common.pdb
