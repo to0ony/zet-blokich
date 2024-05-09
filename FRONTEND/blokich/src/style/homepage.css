@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center; /* Centriraj tekst */
+  color: #007bff;
+}
+
+body {
+  background-color: #e2e2e2; /* Postavi boju pozadine */
+}
+
+.login-block {
+  margin: 20px auto; /* Postavi margine za centriranje bloka */
+  padding: 20px 20px 20px 20px; /* Dodaj padding kako bi blok imao malo prostora oko sadržaja */
+  width: 300px; /* Postavi širinu bloka */
+  background-color: #88aeff; /* Postavi pozadinsku boju */
+  border-radius: 10px; /* Zaobljeni rubovi */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dodaj blagu sjenu */
+}
+
+.login-block input[type="text"],
+.login-block input[type="password"] {
+  width: 50%; /* Popuni širinu dostupnog prostora */
+  padding: 10px; /* Dodaj padding unutar input polja */
+  margin-bottom: 10px; /* Dodaj malo prostora ispod input polja */
+}
+
+.login-block button {
+  width: 20%; /* Popuni širinu dostupnog prostora */
+  padding: 10px; /* Dodaj padding unutar dugmeta */
+  background-color: #007bff; /* Postavi boju pozadine */
+  color: #fff; /* Postavi boju teksta */
+  border: none; /* Ukloni granicu */
+  border-radius: 5px; /* Zaobljeni rubovi */
+  cursor: pointer; /* Promijeni kursor na pokazivač */
+}
+
+.login-block button:hover {
+  background-color: #0056b3; /* Promijeni boju pozadine na hover */
+}
+
+.driver-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.driver-input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 30%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
