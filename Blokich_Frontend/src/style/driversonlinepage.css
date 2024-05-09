@@ -1,0 +1,133 @@
+.drivers-on-line-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+card {
+  padding: "10px";
+  margin-bottom: "10px";
+  border: "1px solid #ccc";
+  border-radius: "5px";
+}
+
+/* tablica */
+/* driversTable.css */
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  background-color: darkgray;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Dodaj novi stil za boldiranje broja vozača */
+.td .boldBrojVozaca {
+  font-weight: bold !important;
+}
+
+/* driversonlinepage.css */
+
+/* Stilizacija dropdowna */
+.select-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa; /* Boja pozadine */
+}
+
+.select-dropdown:hover {
+  cursor: pointer;
+}
+
+/* Dodatni stil za dropdown kada je focusiran */
+.select-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Stilizacija inputa */
+.input-text {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa; /* Boja pozadine */
+}
+
+/* Dodatni stil za input kada je focusiran */
+.input-text:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Stilizacija gumbova */
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Dodatni stil za gumbove kada su hoverani */
+.button:hover {
+  background-color: #0056b3;
+}
+
+.label {
+  font-size: 14px; /* Manji font */
+  text-transform: lowercase; /* Tekst malim slovima */
+  margin-bottom: 5px; /* Mali razmak ispod oznake */
+}
+
+.logged-driver {
+  font-weight: bold;
+}
+
+.label-inside {
+  display: flex;
+  flex-direction: column;
+}
