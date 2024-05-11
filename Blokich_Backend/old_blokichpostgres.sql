@@ -9,6 +9,19 @@ CREATE TABLE Disponent (
     Ned VARCHAR(5)
 );
 
+CREATE TABLE disponent (
+    Radnik VARCHAR(255),
+    Pon VARCHAR(255),
+    Uto VARCHAR(255),
+    Sri VARCHAR(255),
+    Cet VARCHAR(255),
+    Pet VARCHAR(255),
+    Sub VARCHAR(255),
+    Ned VARCHAR(255),
+    Tjedan_u_godini INT DEFAULT DATEPART(wk, GETDATE()),
+    Godina INT DEFAULT YEAR(GETDATE())
+);
+
 CREATE TABLE Sluzba (
     brojSluzbe VARCHAR(10),
     linija VARCHAR(10),
