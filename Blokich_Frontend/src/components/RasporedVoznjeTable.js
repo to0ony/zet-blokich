@@ -28,20 +28,23 @@ const RasporedVoznjeTable = ({ scheduleData }) => {
 
   return (
     <div className="raspored-voznje">
-      <h2>Broj vozača: {scheduleData.brojVozaca}</h2>
-      {days.map((day, index) => {
+      <center>
+      <h3 className={"driver-number"}>Broj vozača: {scheduleData.brojVozaca}</h3>
+      </center>
+        {days.map((day, index) => {
         // Dobivanje datuma za trenutni dan u tjednu
         const mondayDate = getMondayDate();
         const currentDate = addDays(mondayDate, index);
 
         return (
           <div key={index} className="raspored-voznje-dan">
-            <h2>
-              {day.name}: {format(currentDate, "dd.MM.yyyy")}
-            </h2>
+            <div key={index} className="raspored-voznje-dan">
+              <div className="day-name">{day.name}</div>
+              <div className="date">{format(currentDate, "dd.MM.yyyy")}</div>
+            </div>
             <table className="raspored-voznje-tablica">
               <thead>
-                <tr
+              <tr
                   className={
                     day.name === "Subota"
                       ? "red-subota"

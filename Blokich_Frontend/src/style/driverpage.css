@@ -30,7 +30,7 @@
 
 /* Stilizacija zaglavlja tablice */
 .raspored-voznje-tablica th {
-  background-color: #f2f2f2;
+  background-color: #6fc9ff;
   padding: 10px;
   border: 1px solid #ddd;
 }
@@ -57,9 +57,26 @@
 }
 
 .red-subota th {
-  background-color: green;
+  background-color: #21a31c;
 }
 
 .red-nedjelja th {
-  background-color: red;
+  background-color: #ff5e5e;
+}
+
+.raspored-voznje-dan {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.day-name {
+  float: left;
+  margin-left: 5px;
+}
+
+.date {
+  float: right;
+  margin-right: 5px;
 }

@@ -30,7 +30,7 @@ body {
 }
 
 .login-block button {
-  width: 20%; /* Popuni širinu dostupnog prostora */
+  width: 30%; /* Popuni širinu dostupnog prostora */
   padding: 10px; /* Dodaj padding unutar dugmeta */
   background-color: #007bff; /* Postavi boju pozadine */
   color: #fff; /* Postavi boju teksta */
@@ -76,5 +76,5 @@ body {
 .error-message {
   color: red;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }

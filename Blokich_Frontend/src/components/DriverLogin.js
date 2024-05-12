@@ -27,11 +27,11 @@ const DriverLogin = () => {
           localStorage.setItem("brojVozaca", driverNumber);
           navigate(`/driverprofile/${driverNumber}`);
         } else {
-          setError("Driver not found.");
+          setError("Vozač s navedenim brojem nepostoji!");
         }
       } catch (error) {
-        console.error("Error fetching driver data:", error);
-        setError("Error fetching driver data. Please try again later.");
+        console.error("Greška prilikom dohvaćanja podataka:", error);
+        setError("Greška prilikom dohvaćanja podataka. Pokušajte ponovo.");
       }
     }
   };
@@ -41,11 +41,11 @@ const DriverLogin = () => {
       <input
         type="text"
         onChange={handleDriverNumberChange}
-        placeholder="Enter driver number"
+        placeholder="Unesi broj vozača"
         className="driver-input"
       />
       <button onClick={handleLogin} className="login-button">
-        Login
+        Prijava
       </button>
       {error && <p className="error-message">{error}</p>}
     </div>
