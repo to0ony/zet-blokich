@@ -5,7 +5,7 @@ COPY vozaci FROM 'D:\coding\BLOKICH\tabula-win-1.2.1\ImenaVozaca\imenavozaca.csv
 
 --Kreiranje tablice disponenta, sluzbe i vozaci
 CREATE TABLE disponent (
-    Radnik VARCHAR(255),
+    Radnik INT(255),
     Pon VARCHAR(255),
     Uto VARCHAR(255),
     Sri VARCHAR(255),
@@ -74,4 +74,4 @@ WHERE s.linija = '126'
 ORDER BY od
 
 
-SELECT r.radnik, v.imeprezime, s.* FROM disponent_19tj_2024 r INNER JOIN sluzba s ON r.Uto = s.BrojSluzbe INNER JOIN vozaci v ON r.radnik = v.brojvozaca WHERE s.linija = '162' ORDER BY od
+SELECT r.radnik, v.imeprezime, s.* FROM disponent r INNER JOIN sluzba s ON r.Uto = s.BrojSluzbe INNER JOIN vozaci v ON r.radnik = v.brojvozaca WHERE s.linija = '162' and r.tjedan_u_godini = default_week_in_year() ORDER BY od

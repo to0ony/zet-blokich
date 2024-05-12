@@ -24,7 +24,7 @@ namespace Blokich.Repository
             {
                 conn.Open();
 
-                using (var cmd = new NpgsqlCommand($"SELECT r.radnik, v.imeprezime, s.* FROM disponent_19tj_2024 r INNER JOIN sluzba s ON r.{formattedDay} = s.BrojSluzbe INNER JOIN vozaci v ON r.radnik = v.brojvozaca WHERE s.linija = @BrojLinije::text ORDER BY od", conn))
+                using (var cmd = new NpgsqlCommand($"SELECT r.radnik, v.imeprezime, s.* FROM disponent r INNER JOIN sluzba s ON r.{formattedDay} = s.BrojSluzbe INNER JOIN vozaci v ON r.radnik = v.brojvozaca WHERE s.linija = @BrojLinije::text AND r.tjedan_u_godini = default_week_in_year() ORDER BY od", conn))
                 {
                     cmd.Parameters.AddWithValue("@BrojLinije", brojLinije);
                     using (var reader = await cmd.ExecuteReaderAsync())

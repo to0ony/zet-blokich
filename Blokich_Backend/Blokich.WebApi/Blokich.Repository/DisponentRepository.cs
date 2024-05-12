@@ -21,7 +21,7 @@ namespace Blokich.Repository
             using (var conn = new NpgsqlConnection(connString))
             {
                 conn.Open();
-                using (var cmd = new NpgsqlCommand("SELECT * FROM disponent_19tj_2024 WHERE radnik = @brojVozac", conn))
+                using (var cmd = new NpgsqlCommand("SELECT * FROM disponent WHERE radnik = @brojVozac", conn))
                 {
                     cmd.Parameters.AddWithValue("brojVozac", brojVozac);
                     using (var reader = await cmd.ExecuteReaderAsync())

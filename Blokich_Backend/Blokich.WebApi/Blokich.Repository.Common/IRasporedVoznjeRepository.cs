@@ -10,6 +10,6 @@ namespace Blokich.Repository.Common
 {
     public interface IRasporedVoznjeRepository
     {
-        Task<RasporedVoznje> GetRasporedVoznje(int brojVozaca);
+        Task<RasporedVoznje> GetRasporedVoznjeForCurrentWeek(int brojVozaca);
     }
 }

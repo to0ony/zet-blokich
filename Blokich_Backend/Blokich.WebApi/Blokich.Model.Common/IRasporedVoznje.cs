@@ -16,5 +16,7 @@ namespace Blokich.Model.Common
         IEnumerable<ISluzba> sub { get; set; }
         IEnumerable<ISluzba> pet { get; set; }
         IEnumerable<ISluzba> ned { get; set; }
+        int tjedan_u_godini { get; set; }
+        int godina { get; set; }
     }
 }

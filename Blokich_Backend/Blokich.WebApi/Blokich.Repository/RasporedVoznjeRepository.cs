@@ -13,16 +13,19 @@ namespace Blokich.Repository
     {
         private readonly string connString = "Server = 127.0.0.1;Port=5432;Database=Blokich ;User Id = postgres; Password=postgres;";
 
-        public async Task<RasporedVoznje> GetRasporedVoznje(int brojVozaca)
+        public async Task<RasporedVoznje> GetRasporedVoznjeForCurrentWeek(int brojVozaca)
         {
             RasporedVoznje rasporedVoznje = new RasporedVoznje();
+            System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("hr-HR");
+            int brojTjedna = cultureInfo.Calendar.GetWeekOfYear(DateTime.Now, System.Globalization.CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
 
             using (var conn = new NpgsqlConnection(connString))
             {
                 conn.Open();
-                using (var cmd = new NpgsqlCommand("SELECT * FROM disponent_19tj_2024 WHERE radnik = @brojVozaca", conn))
+                using (var cmd = new NpgsqlCommand($"SELECT * FROM disponent WHERE radnik = @brojVozaca AND tjedan_u_godini = @brojTjedna", conn))
                 {
                     cmd.Parameters.AddWithValue("brojVozaca", brojVozaca);
+                    cmd.Parameters.AddWithValue("brojTjedna", brojTjedna);
                     using (var reader = await cmd.ExecuteReaderAsync())
                     {
                         if (reader.Read())
@@ -35,12 +38,15 @@ namespace Blokich.Repository
                             rasporedVoznje.pet = await GetSluzba(reader.GetString(5));
                             rasporedVoznje.sub = await GetSluzba(reader.GetString(6));
                             rasporedVoznje.ned = await GetSluzba(reader.GetString(7));
+                            rasporedVoznje.tjedan_u_godini = reader.GetInt32(8);
+                            rasporedVoznje.godina = reader.GetInt32(9);
                         }
                     }
                 }
             }
             return rasporedVoznje;
         }
+
 
         public async Task<IEnumerable<Sluzba>> GetSluzba(string brojSluzbe)
         {
@@ -116,6 +122,8 @@ namespace Blokich.Repository
             }
             return sluzbe;
         }
+
+
 
     }
 }

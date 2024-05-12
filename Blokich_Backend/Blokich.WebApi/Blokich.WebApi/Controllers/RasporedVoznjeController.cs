@@ -16,7 +16,7 @@ namespace Blokich.Controllers
         {
             try
             {
-                var response = await new RasporedVoznjeRepository().GetRasporedVoznje(brojVozaca);
+                var response = await new RasporedVoznjeRepository().GetRasporedVoznjeForCurrentWeek(brojVozaca);
                 return Request.CreateResponse(HttpStatusCode.OK, response);
             }
             catch
