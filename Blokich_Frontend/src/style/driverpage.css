@@ -1,0 +1,82 @@
+/* driverpage.css */
+
+.driver-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* rasporedvoznjetable.css */
+
+/* Stilizacija kontejnera za raspored vožnje */
+.raspored-voznje {
+  margin-top: 20px;
+}
+
+/* Stilizacija pojedinog dana u rasporedu */
+.raspored-voznje-dan {
+  margin-bottom: 20px;
+}
+
+/* Stilizacija tablice rasporeda vožnje */
+.raspored-voznje-tablica {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Stilizacija zaglavlja tablice */
+.raspored-voznje-tablica th {
+  background-color: #6fc9ff;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Stilizacija ćelija u tablici */
+.raspored-voznje-tablica td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Dodatni stilovi za ćelije s brojem sluzbe */
+.broj-sluzbe-cell {
+  font-weight: bold;
+}
+
+/* Stilizacija ćelija s podacima vožnje */
+.linija-cell,
+.vr-cell,
+.nastup-sluzbe-cell,
+.od-cell,
+.do-cell,
+.zavrsetak-sluzbe-cell {
+  font-style: italic;
+}
+
+.red-subota th {
+  background-color: #21a31c;
+}
+
+.red-nedjelja th {
+  background-color: #ff5e5e;
+}
+
+.raspored-voznje-dan {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.day-name {
+  float: left;
+  margin-left: 5px;
+}
+
+.date {
+  float: right;
+  margin-right: 5px;
+}
