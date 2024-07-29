@@ -1,3 +1,6 @@
+# Napomena
+S obzirom na dosta čudan format tablica u ZETovim pdfovima, izvlačenje podataka iz tablica je dosta teško i zahtjeva dosta vremena.
+
 # zet-blokich
 Aplikacija namijenjena vozačima javnog prijevoza u Zagrebu - ZET
 
