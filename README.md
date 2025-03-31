@@ -1,5 +1,5 @@
 
-# ZetBlokich
+# ZetBlokich - deprecated 
 Aplikacija namijenjena vozačima javnog prijevoza u Zagrebu - ZET.
 Omogućava:
 
